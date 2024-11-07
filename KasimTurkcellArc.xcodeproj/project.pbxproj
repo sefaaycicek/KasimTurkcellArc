@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		DC6A12C52CDB865E004AA30F /* RxAlamofire in Frameworks */ = {isa = PBXBuildFile; productRef = DC6A12C42CDB865E004AA30F /* RxAlamofire */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		DC3C62F22CDB4518005EE52A /* KasimTurkcellArc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KasimTurkcellArc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -36,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC6A12C52CDB865E004AA30F /* RxAlamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,7 @@
 			);
 			name = KasimTurkcellArc;
 			packageProductDependencies = (
+				DC6A12C42CDB865E004AA30F /* RxAlamofire */,
 			);
 			productName = KasimTurkcellArc;
 			productReference = DC3C62F22CDB4518005EE52A /* KasimTurkcellArc.app */;
@@ -107,6 +113,9 @@
 			);
 			mainGroup = DC3C62E92CDB4518005EE52A;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				DC6A12C32CDB865E004AA30F /* XCRemoteSwiftPackageReference "RxAlamofire" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = DC3C62F32CDB4518005EE52A /* Products */;
 			projectDirPath = "";
@@ -335,6 +344,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DC6A12C32CDB865E004AA30F /* XCRemoteSwiftPackageReference "RxAlamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RxSwiftCommunity/RxAlamofire.git";
+			requirement = {
+				kind = exactVersion;
+				version = 6.1.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DC6A12C42CDB865E004AA30F /* RxAlamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DC6A12C32CDB865E004AA30F /* XCRemoteSwiftPackageReference "RxAlamofire" */;
+			productName = RxAlamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DC3C62EA2CDB4518005EE52A /* Project object */;
 }
