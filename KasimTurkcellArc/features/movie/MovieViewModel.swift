@@ -25,7 +25,6 @@ class MovieViewModel {
         self.apiService.searchMovies(searchText: searchText)
             .observe(on: MainScheduler.asyncInstance)
             .subscribe(onSuccess: { [weak self] response in
-                
                 if response?.success == true {
                     let models = response?.result.map({ MovieUIModel(from: $0) })
                     self?.originalData = models ?? []
@@ -39,5 +38,13 @@ class MovieViewModel {
                 print(error.localizedDescription)
             }).disposed(by: disposeBag)
                        
+    }
+    
+    var numberOfItems: Int {
+        return data.value.count
+    }
+    
+    func getItem(at index : Int)-> MovieUIModel {
+        return data.value[index]
     }
 }

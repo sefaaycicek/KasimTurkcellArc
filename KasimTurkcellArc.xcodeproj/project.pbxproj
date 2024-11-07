@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC26D7AF2CDCB42600CC2476 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = DC26D7AE2CDCB42600CC2476 /* Kingfisher */; };
+		DC26D8022CDCB6F300CC2476 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = DC26D8012CDCB6F300CC2476 /* Realm */; };
+		DC26D8042CDCB6F300CC2476 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DC26D8032CDCB6F300CC2476 /* RealmSwift */; };
 		DC6A12C52CDB865E004AA30F /* RxAlamofire in Frameworks */ = {isa = PBXBuildFile; productRef = DC6A12C42CDB865E004AA30F /* RxAlamofire */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +43,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC26D8042CDCB6F300CC2476 /* RealmSwift in Frameworks */,
+				DC26D8022CDCB6F300CC2476 /* Realm in Frameworks */,
+				DC26D7AF2CDCB42600CC2476 /* Kingfisher in Frameworks */,
 				DC6A12C52CDB865E004AA30F /* RxAlamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -84,6 +90,9 @@
 			name = KasimTurkcellArc;
 			packageProductDependencies = (
 				DC6A12C42CDB865E004AA30F /* RxAlamofire */,
+				DC26D7AE2CDCB42600CC2476 /* Kingfisher */,
+				DC26D8012CDCB6F300CC2476 /* Realm */,
+				DC26D8032CDCB6F300CC2476 /* RealmSwift */,
 			);
 			productName = KasimTurkcellArc;
 			productReference = DC3C62F22CDB4518005EE52A /* KasimTurkcellArc.app */;
@@ -115,6 +124,8 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				DC6A12C32CDB865E004AA30F /* XCRemoteSwiftPackageReference "RxAlamofire" */,
+				DC26D7AD2CDCB42600CC2476 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				DC26D8002CDCB6F300CC2476 /* XCRemoteSwiftPackageReference "realm-swift" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = DC3C62F32CDB4518005EE52A /* Products */;
@@ -162,6 +173,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -190,6 +202,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -346,6 +359,22 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		DC26D7AD2CDCB42600CC2476 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.1.0;
+			};
+		};
+		DC26D8002CDCB6F300CC2476 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				kind = exactVersion;
+				version = 10.30.0;
+			};
+		};
 		DC6A12C32CDB865E004AA30F /* XCRemoteSwiftPackageReference "RxAlamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/RxSwiftCommunity/RxAlamofire.git";
@@ -357,6 +386,21 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		DC26D7AE2CDCB42600CC2476 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DC26D7AD2CDCB42600CC2476 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		DC26D8012CDCB6F300CC2476 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DC26D8002CDCB6F300CC2476 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		DC26D8032CDCB6F300CC2476 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DC26D8002CDCB6F300CC2476 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
 		DC6A12C42CDB865E004AA30F /* RxAlamofire */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = DC6A12C32CDB865E004AA30F /* XCRemoteSwiftPackageReference "RxAlamofire" */;
